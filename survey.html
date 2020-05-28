@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="surveyStyle.css">
+    <title>Lab1_Survey</title>
+</head>
+
+<body>
+
+    <div id="slideout-menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="survey.html">Survey</a>
+            </li>
+            <li>
+                <a href="https://www.fido.ca/">Fido Official Website</a>
+            </li>
+        </ul>
+    </div>
+
+    <nav>
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="survey.html">Survey</a>
+            </li>
+            <li>
+                <a href="https://www.fido.ca/">Fido Official Website</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="form">
+        <form action="index.php" name="my form" method="POST">
+          First name:<input type="text" name="firstname"><br>
+          Last name:<input type="text" naem="lastname">
+
+        Are you:<br>
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+
+       Which of the following pages are you dissatisfied with, you can choose one or more:<br>
+        <input type="checkbox" name="Fido Home Page" value="Fido Home Paage">Fido Home Page<br>
+        <input type="checkbox" name="Fido Shopping Page" value="Fido Shopping Page">Fido Shopping Page<br>
+        <input type="checkbox" name="Fido Register Page" value="Fido Register Page">Fido Register Page<br>
+        <input type="checkbox" name="Fido Support Page" value="Fido Support Page">Fido Support Page<br>
+
+        Which part do you like we should adjust?<br>
+        <select name="adjust part">
+            <option value="font size" selected="selected">Font size</option>
+            <option value="picture size">Picture size</option>
+            <option value="web layout">Web layout</option>
+
+        </select>
+
+     Comments:<br>
+            <textarea rows="5" clos="30"></textarea>
+
+        <input type="submit" value="submit the questionnaire"/>  
+        </form>
+
+    </div>
